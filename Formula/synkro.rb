@@ -7,20 +7,22 @@ class Synkro < Formula
   version "0.1.0"
 
   on_macos do
+    depends_on arch: :arm64
+
     on_arm do
       url "https://github.com/synkro-sh/homebrew-tap/releases/download/v0.1.0/synkro-aarch64-apple-darwin.tar.gz"
-      sha256 "f78d50a8af3f39d19fb163be9f8811d28d6d27b0ae1024ebd26f362a2a4ef017"
+      sha256 "49b6c6cbd5812e63ce6f56ec7233bff074aa5f5d12b3896d941f83ff645f1e28"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/synkro-sh/homebrew-tap/releases/download/v0.1.0/synkro-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "d27703669c0d5936a5bc85c7e1f72aa9b117a6de0c23748d3b29cb9cd18aa35f"
+      sha256 "f1c841f6557278f56997037fc2fb334d42e74abd2dc523efafe6502221189dc2"
     end
     on_intel do
       url "https://github.com/synkro-sh/homebrew-tap/releases/download/v0.1.0/synkro-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "9e0211203e952800099e00b2ab5fce24de9a874b04f4fa89aca910a38fe1c66b"
+      sha256 "34173bed20a11ad58c097b6e4eaacedac3dbf9afc2e8c7903dbf6fd7f21c899c"
     end
   end
 
