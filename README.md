@@ -27,9 +27,10 @@ source repository is private — only the built binaries are published here.
 | Platform | Target triple |
 |---|---|
 | macOS (Apple Silicon) | `aarch64-apple-darwin` |
-| macOS (Intel) | `x86_64-apple-darwin` |
 | Linux (x86_64) | `x86_64-unknown-linux-gnu` |
 | Linux (arm64) | `aarch64-unknown-linux-gnu` |
+
+Intel macOS is not supported; Apple Silicon is the only macOS target.
 
 macOS and Linux x86_64 are built natively on matching runners. Linux arm64 is
 cross-compiled under `cross`, because GitHub's free arm64 Linux runners are
