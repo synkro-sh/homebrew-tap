@@ -4,7 +4,7 @@
 class Synkro < Formula
   desc "Local policy enforcement engine for AI coding agents"
   homepage "https://github.com/synkro-sh/synkro-rs"
-  version "0.1.3"
+  version "0.1.4"
 
   depends_on "restatedev/tap/restate-server"
 
@@ -12,19 +12,19 @@ class Synkro < Formula
     depends_on arch: :arm64
 
     on_arm do
-      url "https://github.com/synkro-sh/homebrew-tap/releases/download/v0.1.3/synkro-aarch64-apple-darwin.tar.gz"
-      sha256 "d7f293e7dade79cc4bffa2ec5d7e37f746d7587460f78da7465d7f950eb4b830"
+      url "https://github.com/synkro-sh/homebrew-tap/releases/download/v0.1.4/synkro-aarch64-apple-darwin.tar.gz"
+      sha256 "e003307154480231be990a3907730c3e12f7796bd9b46e3581ca886f4019d068"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/synkro-sh/homebrew-tap/releases/download/v0.1.3/synkro-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "925fd6913241e7903177bed4f8cef93af4fbe3cc270a66b7ccd7d23d310fdb06"
+      url "https://github.com/synkro-sh/homebrew-tap/releases/download/v0.1.4/synkro-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "4c838f38b45e86dcb1088e19ca46b76e06cbb64d4fd66050fb7037807a60ab84"
     end
     on_intel do
-      url "https://github.com/synkro-sh/homebrew-tap/releases/download/v0.1.3/synkro-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "110bfb83f7312ff0202d1f62c17254efa2362eb1279aa5c8f6362d876a286f78"
+      url "https://github.com/synkro-sh/homebrew-tap/releases/download/v0.1.4/synkro-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "afd6afb1523d822de3c26111f2bd24928973b97fa3f0e36ca89bb6460c876853"
     end
   end
 
