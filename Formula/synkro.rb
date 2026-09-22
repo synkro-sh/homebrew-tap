@@ -10,13 +10,15 @@ class Synkro < Formula
 
   depends_on "restatedev/tap/restate-server"
 
+  # macOS ships Apple Silicon only (Intel macOS was dropped). The url lives
+  # directly under on_macos — not nested in on_arm — so Homebrew never sees an
+  # Intel-macOS branch with no url (which newer Homebrew rejects at tap time);
+  # `depends_on arch: :arm64` refuses the install on an Intel Mac with a clear
+  # message instead.
   on_macos do
     depends_on arch: :arm64
-
-    on_arm do
-      url "https://github.com/synkro-sh/homebrew-tap/releases/download/v0.2.0-rc.5/synkro-aarch64-apple-darwin.tar.gz"
-      sha256 "c2ba9658f7a3f0bfae40e6bd8d3ceba8d05d9daac841f03f1338efc89cb185a3"
-    end
+    url "https://github.com/synkro-sh/homebrew-tap/releases/download/v0.2.0-rc.5/synkro-aarch64-apple-darwin.tar.gz"
+    sha256 "c2ba9658f7a3f0bfae40e6bd8d3ceba8d05d9daac841f03f1338efc89cb185a3"
   end
 
   on_linux do
