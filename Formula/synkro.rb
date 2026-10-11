@@ -6,7 +6,7 @@
 class Synkro < Formula
   desc "Local policy enforcement engine for AI coding agents"
   homepage "https://github.com/synkro-sh/synkro-rs"
-  version "0.2.0-rc.19"
+  version "0.2.0-rc.20"
 
   # Hosted mode is the default. Local services are installed separately only
   # when the user explicitly chooses local mode.
@@ -18,18 +18,18 @@ class Synkro < Formula
   # message instead.
   on_macos do
     depends_on arch: :arm64
-    url "https://github.com/synkro-sh/homebrew-tap/releases/download/v0.2.0-rc.19/synkro-aarch64-apple-darwin.tar.gz"
-    sha256 "c737fcc2d47c24fd7c29dcaa7fa28cafa506c2108841b1f49e9fc1abd0141615"
+    url "https://github.com/synkro-sh/homebrew-tap/releases/download/v0.2.0-rc.20/synkro-aarch64-apple-darwin.tar.gz"
+    sha256 "43a29ae11edd0e38895eba6fe24781412a7bafee975e01c0987c3b2d8c09c8b1"
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/synkro-sh/homebrew-tap/releases/download/v0.2.0-rc.19/synkro-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "af92e7affd987eb4f2904dc64e241c18db91ae1edc70c45a09f21ce56b3a14e4"
+      url "https://github.com/synkro-sh/homebrew-tap/releases/download/v0.2.0-rc.20/synkro-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "f9cb87d16a52602f5d142c48079d1b8590c728f96d90919db476f48ec87bf9a3"
     end
     on_intel do
-      url "https://github.com/synkro-sh/homebrew-tap/releases/download/v0.2.0-rc.19/synkro-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "c1d10479fdb9c17cc58b5eb532f9fffdd0f53b65c411756545501d494928f203"
+      url "https://github.com/synkro-sh/homebrew-tap/releases/download/v0.2.0-rc.20/synkro-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "6e0d05c8afbd876dc6b4d8c8a9a84a4da9bfa199aaca79dbead010678ff24428"
     end
   end
 
