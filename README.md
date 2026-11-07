@@ -1,6 +1,6 @@
 # Synkro Homebrew tap
 
-Homebrew distribution for the [Synkro](https://github.com/synkro-sh/synkro-rs) CLI.
+Homebrew distribution for the [Synkro](https://synkro.sh) CLI.
 
 This repository holds two things: the formula Homebrew reads, and the compiled
 binaries it downloads. Releases are published here by the `release` workflow in
