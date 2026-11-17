@@ -6,14 +6,14 @@
 class Synkro < Formula
   desc "Local policy enforcement engine for AI coding agents"
   homepage "https://synkro.sh"
-  url "https://github.com/synkro-sh/homebrew-tap/releases/download/v0.3.19/synkro-aarch64-apple-darwin.tar.gz"
-  sha256 "db982ac018397b278ebcc496871fd6082559016e678f7b9a6389953f52a3663f"
+  url "https://github.com/synkro-sh/homebrew-tap/releases/download/v0.3.20/synkro-aarch64-apple-darwin.tar.gz"
+  sha256 "82211c432d775bf3d89ed03bfa0f7b61bfff4fcbfc92a06f0f7715ca8cc4becd"
 
   bottle do
-    root_url "https://github.com/synkro-sh/homebrew-tap/releases/download/v0.3.19"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "8367fe2cdb09ee9d4b2924ae474ebea74354a9e9a76f7e965e7f6f18479d1aa4"
-    sha256 cellar: :any_skip_relocation, arm64_linux:  "b609e6b2bd213b48ab383f28f9e27083cd8f9d54b1a773ea0948bab0d4003eb4"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "dce5abd99f5070d05833e953d7ef3b18481f8ca3110b1ac05483e092f41b18b4"
+    root_url "https://github.com/synkro-sh/homebrew-tap/releases/download/v0.3.20"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "9e471bc57383c1382df0748ed7de38f6fdeb33acda47f5183835a4cfe1dcbba2"
+    sha256 cellar: :any_skip_relocation, arm64_linux:  "7f4914fd9b00393ead0fb8dd7250dd2f6e0ca8b9aee803071ca2370f8594bdff"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "59208171cea8fc385c2df5c35e59caf1ab59b91e7a7f7fc76576f55a76aa941d"
   end
 
   # Hosted mode is the default. Local services are installed separately only
@@ -26,12 +26,12 @@ class Synkro < Formula
 
   on_linux do
     on_arm do
-      url "https://github.com/synkro-sh/homebrew-tap/releases/download/v0.3.19/synkro-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "ee20856d4916bc676a8bab0e11f038b1f2f3d5e31130f5a95d8895e991bc99d4"
+      url "https://github.com/synkro-sh/homebrew-tap/releases/download/v0.3.20/synkro-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "976853909d0ba9eb03bdbe3434dd21a7ae750fb0124150ef6304ef3475de475e"
     end
     on_intel do
-      url "https://github.com/synkro-sh/homebrew-tap/releases/download/v0.3.19/synkro-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "127d814196abe2393e85a55f684bfe658bce06c773e93dd64be3c95f511ab587"
+      url "https://github.com/synkro-sh/homebrew-tap/releases/download/v0.3.20/synkro-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "1c25c41bae05fc6c2e92ada8317e9e2fd4a902d9dbcd3102e5263ed25fcc05d8"
     end
   end
 
